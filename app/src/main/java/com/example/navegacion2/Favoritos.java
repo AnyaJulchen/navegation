@@ -3,6 +3,7 @@ package com.example.navegacion2;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -41,6 +42,12 @@ public class Favoritos extends Fragment {
         btn.setOnClickListener( v ->{
             int num1 = Integer.parseInt(text_1.getText().toString());
             int num2 = Integer.parseInt(text_2.getText().toString());
+
+            FavoritosDirections.ActionFavoritosToMusica2 action =
+            FavoritosDirections.actionFavoritosToMusica2(num1, num2);
+
+            NavHostFragment.findNavController(Favoritos.this).navigate(action);
+
 
         });
 

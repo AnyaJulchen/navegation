@@ -20,5 +20,11 @@
         android:name="com.example.navegacion2.Musica"
         android:label="fragment_musica"
         tools:layout="@layout/fragment_musica" >
+        <argument
+            android:name="numero1"
+            app:argType="integer"/>
+        <argument
+            android:name="numero2"
+            app:argType="integer"/>
     </fragment>
 </navigation>
