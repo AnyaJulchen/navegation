@@ -45,6 +45,6 @@ public class Favoritos extends Fragment {
         });
 
 
-
+        return view;
     }
 }
