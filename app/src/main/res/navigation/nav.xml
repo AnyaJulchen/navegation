@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/favoritos">
+
+    <fragment
+        android:id="@+id/favoritos"
+        android:name="com.example.navegacion2.Favoritos"
+        android:label="fragment_favoritos"
+        tools:layout="@layout/fragment_favoritos" >
+
+        <action
+            android:id="@+id/action_favoritos_to_musica2"
+            app:destination="@id/musica" />
+    </fragment>
+    <fragment
+        android:id="@+id/musica"
+        android:name="com.example.navegacion2.Musica"
+        android:label="fragment_musica"
+        tools:layout="@layout/fragment_musica" >
+    </fragment>
+</navigation>
