@@ -22,9 +22,13 @@
         tools:layout="@layout/fragment_musica" >
         <argument
             android:name="numero1"
-            app:argType="integer"/>
+            app:argType="integer"
+            android:defaultValue="0"
+            />
         <argument
             android:name="numero2"
-            app:argType="integer"/>
+            app:argType="integer"
+            android:defaultValue="0"
+            />
     </fragment>
 </navigation>
