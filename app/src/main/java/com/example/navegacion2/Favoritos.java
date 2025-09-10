@@ -44,7 +44,9 @@ public class Favoritos extends Fragment {
             int num2 = Integer.parseInt(text_2.getText().toString());
 
             FavoritosDirections.ActionFavoritosToMusica2 action =
-            FavoritosDirections.actionFavoritosToMusica2(num1, num2);
+            FavoritosDirections.actionFavoritosToMusica2();
+            action.setNumero1(num1);
+            action.setNumero2(num2);
 
             NavHostFragment.findNavController(Favoritos.this).navigate(action);
 
