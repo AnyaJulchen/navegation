@@ -1,22 +1,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/page_1"
+        android:id="@+id/favoritos"
         android:enabled="true"
         android:icon="@drawable/favorite"
         android:title="Favoritos"/>
     <item
-        android:id="@+id/page_2"
+        android:id="@+id/musica"
         android:enabled="true"
         android:icon="@drawable/music"
         android:title="Musica"/>
-    <item
-        android:id="@+id/page_3"
-        android:enabled="true"
-        android:icon="@drawable/location"
-        android:title="Lugar"/>
-    <item
-        android:id="@+id/page_4"
-        android:enabled="true"
-        android:icon="@drawable/add"
-        android:title="Agregar"/>
+
 </menu>
